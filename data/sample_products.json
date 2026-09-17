@@ -1,0 +1,424 @@
+[
+  {
+    "id": "PROD-001",
+    "name": "UltraSound Pro X5 Wireless Headphones",
+    "category": "Consumer Electronics",
+    "attributes": {
+      "driver_size": "40mm",
+      "frequency_response": "20Hz–20kHz",
+      "impedance": "32 Ohm",
+      "battery_life": "30 hours",
+      "connectivity": "Bluetooth 5.2, USB-C, 3.5mm jack",
+      "noise_cancellation": "Active Noise Cancellation (ANC)",
+      "weight": "250g",
+      "colors": ["Midnight Black", "Pearl White", "Forest Green"],
+      "foldable": true,
+      "water_resistance": "IPX4"
+    }
+  },
+  {
+    "id": "PROD-002",
+    "name": "ClearView 4K Smart Monitor 27\"",
+    "category": "Monitors",
+    "attributes": {
+      "resolution": "3840x2160 (4K UHD)",
+      "panel_type": "IPS",
+      "refresh_rate": "144Hz",
+      "response_time": "1ms GTG",
+      "hdr": "HDR400",
+      "ports": ["HDMI 2.1 x2", "DisplayPort 1.4", "USB-C 90W PD", "USB-A x4"],
+      "brightness": "400 nits",
+      "color_coverage": "99% sRGB, 95% DCI-P3",
+      "adjustable_stand": true,
+      "vesa_mount": "100x100mm"
+    }
+  },
+  {
+    "id": "PROD-003",
+    "name": "ErgoFlex Pro Standing Desk",
+    "category": "Office Furniture",
+    "attributes": {
+      "height_range": "60–125cm",
+      "adjustment": "Electric dual-motor",
+      "desktop_size": "140x70cm",
+      "weight_capacity": "100kg",
+      "preset_positions": 4,
+      "desktop_material": "Bamboo",
+      "frame_material": "Steel",
+      "colors": ["Natural", "Black", "White"],
+      "cable_management": true,
+      "anti_collision": true
+    }
+  },
+  {
+    "id": "PROD-004",
+    "name": "SwiftCharge 65W GaN USB-C Charger",
+    "category": "Accessories",
+    "attributes": {
+      "technology": "GaN (Gallium Nitride)",
+      "total_wattage": "65W",
+      "ports": ["USB-C x2", "USB-A x1"],
+      "usb_c_max_output": "65W",
+      "compatibility": ["MacBook", "iPad", "iPhone", "Android", "Laptop"],
+      "safety_features": ["Overcharge protection", "Short-circuit protection", "Temperature control"],
+      "dimensions": "58x58x30mm",
+      "weight": "130g",
+      "certifications": ["UL", "CE", "FCC"]
+    }
+  },
+  {
+    "id": "PROD-005",
+    "name": "AeroGrip Mechanical Keyboard TKL",
+    "category": "Peripherals",
+    "attributes": {
+      "layout": "Tenkeyless (TKL)",
+      "switch_type": "Cherry MX Red",
+      "actuation_force": "45g",
+      "backlight": "Per-key RGB",
+      "connectivity": "USB-C (detachable), Wireless 2.4GHz, Bluetooth 5.0",
+      "battery_life": "72 hours (wireless)",
+      "n_key_rollover": true,
+      "keycap_material": "PBT double-shot",
+      "sound_dampening": "Pre-lubed, foam-lined",
+      "dimensions": "360x138x40mm"
+    }
+  },
+  {
+    "id": "PROD-006",
+    "name": "PureBreeze HEPA Air Purifier 500",
+    "category": "Home Appliances",
+    "attributes": {
+      "coverage": "500 sq ft",
+      "filtration": "4-stage: pre-filter, H13 HEPA, activated carbon, UV-C",
+      "cadr": "300 CFM",
+      "noise_level": "20–52 dB",
+      "filter_life": "6–8 months",
+      "smart_features": ["Auto mode", "Sleep mode", "Air quality sensor", "App control"],
+      "energy_star": true,
+      "dimensions": "40x25x65cm",
+      "weight": "7.2kg",
+      "colors": ["White", "Black"]
+    }
+  },
+  {
+    "id": "PROD-007",
+    "name": "TrailBlazer X3 Running Shoes",
+    "category": "Footwear",
+    "attributes": {
+      "upper_material": "Engineered mesh with TPU overlays",
+      "midsole": "Dual-density EVA foam with carbon fiber plate",
+      "outsole": "Continental rubber",
+      "drop": "8mm",
+      "weight": "265g (size 10)",
+      "stack_height": "33mm heel / 25mm forefoot",
+      "sizes": "US 6–15 (half sizes available)",
+      "genders": ["Men", "Women"],
+      "colors": ["Electric Blue/Orange", "All Black", "White/Neon"],
+      "terrain": "Road"
+    }
+  },
+  {
+    "id": "PROD-008",
+    "name": "HydroVault Insulated Water Bottle 32oz",
+    "category": "Drinkware",
+    "attributes": {
+      "capacity": "32oz (946ml)",
+      "material": "18/8 food-grade stainless steel",
+      "insulation": "Double-wall vacuum insulation",
+      "cold_retention": "24 hours",
+      "hot_retention": "12 hours",
+      "lid_type": "Leak-proof straw lid + sport loop cap",
+      "bpa_free": true,
+      "dishwasher_safe": false,
+      "colors": ["Ocean Blue", "Midnight", "Sage Green", "Desert Sand", "Cherry Red"],
+      "weight": "340g"
+    }
+  },
+  {
+    "id": "PROD-009",
+    "name": "SnapShot Pro Mirrorless Camera Kit",
+    "category": "Cameras",
+    "attributes": {
+      "sensor": "24.2MP APS-C CMOS",
+      "iso_range": "100–51200 (expandable to 204800)",
+      "autofocus_points": 425,
+      "video": "4K 30fps, 1080p 120fps",
+      "stabilization": "5-axis in-body image stabilization (IBIS)",
+      "viewfinder": "0.39\" OLED EVF, 2.36M dots",
+      "lcd": "3.0\" fully articulating touchscreen",
+      "battery_life": "400 shots per charge",
+      "weather_sealing": true,
+      "kit_lens": "18–55mm f/3.5–5.6"
+    }
+  },
+  {
+    "id": "PROD-010",
+    "name": "NutriBlend 1200 High-Speed Blender",
+    "category": "Kitchen Appliances",
+    "attributes": {
+      "motor": "1200W peak",
+      "blade_material": "Hardened stainless steel",
+      "container_capacity": "64oz BPA-free Tritan",
+      "speed_settings": 10,
+      "programs": ["Smoothie", "Ice Crush", "Soup", "Self-Clean"],
+      "noise_shield": true,
+      "dimensions": "22x22x48cm",
+      "weight": "4.8kg",
+      "dishwasher_safe": "Container and lid only",
+      "warranty": "7 years"
+    }
+  },
+  {
+    "id": "PROD-011",
+    "name": "ZenSeat Ergonomic Office Chair",
+    "category": "Office Furniture",
+    "attributes": {
+      "lumbar_support": "4D adjustable lumbar",
+      "armrests": "4D adjustable",
+      "seat_height": "42–54cm",
+      "seat_material": "Breathable mesh",
+      "backrest_material": "Responsive mesh",
+      "max_load": "150kg",
+      "recline_range": "90–135 degrees",
+      "headrest": "Adjustable 3D",
+      "base": "5-star aluminum",
+      "warranty": "5 years"
+    }
+  },
+  {
+    "id": "PROD-012",
+    "name": "GlowSkin LED Face Mask Pro",
+    "category": "Beauty & Skincare",
+    "attributes": {
+      "light_modes": ["Red (630nm) – Anti-aging", "Blue (415nm) – Acne", "Near-infrared (830nm) – Recovery", "Yellow (590nm) – Brightening"],
+      "leds": 192,
+      "session_duration": "10–20 minutes",
+      "power_source": "USB-C rechargeable",
+      "material": "Medical-grade silicone",
+      "certifications": ["FDA Class II", "CE"],
+      "eye_protection": "Integrated shields",
+      "sessions_per_charge": 15,
+      "includes": ["Mask", "Controller", "USB-C cable", "Carry pouch"]
+    }
+  },
+  {
+    "id": "PROD-013",
+    "name": "SolarRidge 200W Portable Solar Panel",
+    "category": "Outdoor & Camping",
+    "attributes": {
+      "wattage": "200W",
+      "efficiency": "23.4%",
+      "cell_type": "Monocrystalline PERC",
+      "outputs": ["XT60", "USB-C 100W", "USB-A 18W"],
+      "foldable": true,
+      "weight": "4.9kg",
+      "dimensions_unfolded": "220x100cm",
+      "dimensions_folded": "57x100x3cm",
+      "kickstand": "Adjustable 0–60 degrees",
+      "weatherproof": "IP67"
+    }
+  },
+  {
+    "id": "PROD-014",
+    "name": "CloudPillow Memory Foam Sleep Pillow",
+    "category": "Bedding",
+    "attributes": {
+      "material": "Shredded gel-infused memory foam",
+      "cover": "Bamboo-derived viscose",
+      "height_adjustable": true,
+      "cooling": "Phase-change cooling layer",
+      "sizes": ["Standard", "Queen", "King"],
+      "certifications": ["CertiPUR-US", "OEKO-TEX"],
+      "washable_cover": true,
+      "firmness": "Medium-firm",
+      "weight": "1.1kg (Queen)",
+      "trial_period": "100-night sleep trial"
+    }
+  },
+  {
+    "id": "PROD-015",
+    "name": "CycloTrack Smart Bike Computer",
+    "category": "Sports & Fitness",
+    "attributes": {
+      "display": "3.5\" color touchscreen, 1000 nits",
+      "gps": "Multi-band GPS/GLONASS/Galileo",
+      "battery_life": "20 hours GPS mode",
+      "connectivity": ["Bluetooth", "ANT+", "Wi-Fi"],
+      "sensors": ["Speed", "Cadence", "Power", "Heart rate"],
+      "navigation": "Turn-by-turn with Komoot/Strava integration",
+      "crash_detection": true,
+      "weather_proof": "IPX7",
+      "maps": "Preloaded global maps",
+      "weight": "115g"
+    }
+  },
+  {
+    "id": "PROD-016",
+    "name": "SmartBrew Precision Coffee Maker",
+    "category": "Kitchen Appliances",
+    "attributes": {
+      "brewing_capacity": "12 cups (1.8L)",
+      "bloom_mode": "30-second pre-infusion",
+      "temperature_control": "195–205°F adjustable",
+      "grinder": "Built-in conical burr, 15 grind settings",
+      "programmable": "24-hour scheduling",
+      "keep_warm": "Up to 2 hours (variable)",
+      "carafe": "Thermal stainless steel",
+      "water_filter": "Charcoal filter included",
+      "dimensions": "35x20x40cm",
+      "certifications": "SCA Golden Cup certified"
+    }
+  },
+  {
+    "id": "PROD-017",
+    "name": "VaultGuard Smart Home Security Camera",
+    "category": "Smart Home",
+    "attributes": {
+      "resolution": "2K (2560x1440)",
+      "fov": "160° wide-angle",
+      "night_vision": "Color night vision up to 10m",
+      "ai_features": ["Person detection", "Package detection", "Vehicle detection", "Pet detection"],
+      "storage": "Local SD (up to 256GB) + Cloud optional",
+      "connectivity": "Wi-Fi 6 (2.4GHz/5GHz)",
+      "weather_rating": "IP67",
+      "siren": "105dB built-in siren",
+      "two_way_audio": true,
+      "power": "Wired or rechargeable battery (6 months)"
+    }
+  },
+  {
+    "id": "PROD-018",
+    "name": "FitCore Smart Resistance Bands Set",
+    "category": "Sports & Fitness",
+    "attributes": {
+      "resistance_levels": ["10 lbs", "20 lbs", "30 lbs", "40 lbs", "50 lbs"],
+      "material": "Natural latex + TPE coating",
+      "smart_sensor": "Embedded strain gauge with reps/sets/calories tracking",
+      "app_connectivity": "Bluetooth 5.0 (iOS & Android)",
+      "includes": ["5 bands", "Door anchor", "Handles x2", "Ankle straps x2", "Carry bag"],
+      "max_total_resistance": "150 lbs (combined)",
+      "battery_life": "60 hours per sensor",
+      "water_resistant": "IPX5",
+      "certifications": ["CE", "RoHS"]
+    }
+  },
+  {
+    "id": "PROD-019",
+    "name": "PocketPower 20000mAh Power Bank",
+    "category": "Accessories",
+    "attributes": {
+      "capacity": "20000mAh",
+      "inputs": ["USB-C 30W", "Micro-USB 10W"],
+      "outputs": ["USB-C 65W PD", "USB-A 22.5W QC", "USB-A 18W QC"],
+      "simultaneous_charging": "3 devices",
+      "lcd_display": true,
+      "pass_through_charging": true,
+      "dimensions": "158x74x18mm",
+      "weight": "385g",
+      "certifications": ["UL", "CE", "FCC", "RoHS"],
+      "airline_safe": true
+    }
+  },
+  {
+    "id": "PROD-020",
+    "name": "CookEase Non-Stick Ceramic Pan 12\"",
+    "category": "Cookware",
+    "attributes": {
+      "diameter": "12 inch (30cm)",
+      "material": "Anodized aluminum core with ceramic non-stick coating",
+      "coating": "PTFE/PFOA-free mineral-based ceramic",
+      "handle": "Stainless steel with silicone grip",
+      "oven_safe": "Up to 450°F",
+      "induction_compatible": true,
+      "dishwasher_safe": false,
+      "includes": ["Glass lid", "Pan"],
+      "warranty": "Lifetime",
+      "weight": "1.1kg"
+    }
+  },
+  {
+    "id": "PROD-021",
+    "name": "ArcLight Desk LED Lamp",
+    "category": "Lighting",
+    "attributes": {
+      "brightness": "600 lumens",
+      "color_temperature": "2700K–6500K (5 presets)",
+      "dimming": "10 levels",
+      "power": "USB-C powered (9W)",
+      "usb_charging_port": "USB-A 18W built-in",
+      "arm_reach": "Fully articulating, 50cm",
+      "eye_care": "Flicker-free, anti-glare diffuser",
+      "memory_function": true,
+      "auto_off_timer": "30/60 minute",
+      "certifications": ["Energy Star", "FCC", "CE"]
+    }
+  },
+  {
+    "id": "PROD-022",
+    "name": "ThermalShield 3-in-1 Winter Jacket",
+    "category": "Outerwear",
+    "attributes": {
+      "outer_shell": "100% recycled nylon, DWR-coated",
+      "mid_layer": "300g PrimaLoft Gold insulation",
+      "inner_fleece": "Zip-out anti-pill fleece",
+      "waterproof_rating": "20,000mm",
+      "breathability": "20,000 g/m²/24h",
+      "pockets": 9,
+      "fit": "Regular fit",
+      "sizes": "XS–3XL",
+      "colors": ["Navy", "Black", "Olive", "Burgundy"],
+      "sustainable_materials": ["Recycled nylon shell", "PrimaLoft recycled insulation"]
+    }
+  },
+  {
+    "id": "PROD-023",
+    "name": "BioTrack Ultra Fitness Smartwatch",
+    "category": "Wearables",
+    "attributes": {
+      "display": "1.4\" AMOLED always-on",
+      "sensors": ["Heart rate", "SpO2", "ECG", "Skin temperature", "Stress"],
+      "gps": "Built-in GPS + GLONASS",
+      "battery_life": "7 days standard / 14 days power-save",
+      "water_resistance": "5ATM + IP68",
+      "sports_modes": 150,
+      "sleep_tracking": "Advanced sleep score with REM detection",
+      "compatibility": ["iOS 14+", "Android 9+"],
+      "connectivity": ["Bluetooth 5.2", "NFC payments"],
+      "band_material": "Fluoroelastomer"
+    }
+  },
+  {
+    "id": "PROD-024",
+    "name": "StreamPod Professional Podcast Microphone",
+    "category": "Audio",
+    "attributes": {
+      "pattern": "Cardioid, omnidirectional, bidirectional, stereo",
+      "frequency_response": "20Hz–20kHz",
+      "bit_depth": "24-bit",
+      "sample_rate": "192kHz",
+      "connection": "USB-C",
+      "gain_control": "Physical gain knob",
+      "monitoring": "Zero-latency headphone monitoring, 3.5mm",
+      "mute_button": "LED-backlit touch",
+      "stand": "Scissor boom arm included",
+      "compatibility": ["Mac", "Windows", "iOS", "Android", "PS4/5"]
+    }
+  },
+  {
+    "id": "PROD-025",
+    "name": "GreenThumb Smart Plant Care System",
+    "category": "Smart Home",
+    "attributes": {
+      "sensors": ["Soil moisture", "Light (lux)", "Temperature", "Humidity", "Nutrient level"],
+      "watering": "Automated drip system, programmable",
+      "tank_capacity": "2L",
+      "connectivity": "Wi-Fi + Bluetooth",
+      "app_features": ["Plant ID (AI)", "Care reminders", "Growth journal", "Expert advice"],
+      "compatible_plants": "Up to 4 plants simultaneously",
+      "power": "USB-C or 4x AA batteries",
+      "display": "2.4\" color LCD",
+      "certifications": ["CE", "RoHS"],
+      "weight": "450g"
+    }
+  }
+]
