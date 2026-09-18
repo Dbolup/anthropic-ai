@@ -1,0 +1,189 @@
+.flight-card {
+  background: #fff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.flight-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-color: #93c5fd;
+}
+
+/* Airline */
+.flight-airline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 64px;
+  gap: 4px;
+}
+
+.airline-code {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e40af;
+  background: #dbeafe;
+  border-radius: 8px;
+  padding: 6px 10px;
+  letter-spacing: 0.05em;
+}
+
+.airline-name {
+  font-size: 11px;
+  color: #6b7280;
+  text-align: center;
+  max-width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Route / Times */
+.flight-route {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.flight-endpoint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.endpoint-time {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.endpoint-iata {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+/* Middle (duration + line + stops) */
+.flight-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 3px;
+}
+
+.flight-duration {
+  font-size: 12px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.flight-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.line {
+  flex: 1;
+  height: 1.5px;
+  background: #d1d5db;
+}
+
+.stop-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f59e0b;
+  border: 1.5px solid #d97706;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.plane-icon {
+  font-size: 14px;
+  color: #2563eb;
+  margin-left: 4px;
+}
+
+.flight-stops {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* Price */
+.flight-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  min-width: 110px;
+}
+
+.price-total {
+  font-size: 22px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.price-per-person {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.select-btn {
+  margin-top: 6px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  white-space: nowrap;
+}
+
+.select-btn:hover {
+  background: #1d4ed8;
+}
+
+.select-btn:active {
+  transform: scale(0.96);
+}
+
+/* Responsive */
+@media (max-width: 560px) {
+  .flight-card {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .flight-route {
+    width: 100%;
+  }
+
+  .flight-price {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .select-btn {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
