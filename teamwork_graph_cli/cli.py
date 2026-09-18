@@ -5,10 +5,10 @@ import json
 
 import click
 
-from . import bitbucket, jsm
-from .auth import interactive_login, logout as auth_logout
-from .client import AtlassianSession
-from .config import OAuthAppConfig
+from . import bitbucket, bitbucket_auth, jsm
+from .auth import interactive_login as atlassian_login, logout as atlassian_logout
+from .client import AtlassianSession, BitbucketSession
+from .config import AtlassianOAuthAppConfig, BitbucketOAuthAppConfig
 
 
 def _print(data) -> None:
@@ -19,20 +19,33 @@ def _print(data) -> None:
 @click.option("--site", "site_url", default=None, help="Atlassian site URL for JSM calls, e.g. https://yourteam.atlassian.net (defaults to the first accessible site).")
 @click.pass_context
 def main(ctx: click.Context, site_url: str | None):
-    """Query Bitbucket and Jira Service Management directly, via Atlassian OAuth 2.0 (3LO)."""
+    """Query Bitbucket and Jira Service Management directly.
+
+    Bitbucket and JSM are authorized separately: JSM through an Atlassian
+    OAuth 2.0 (3LO) app, Bitbucket through its own OAuth consumer. Run
+    `login atlassian` and/or `login bitbucket` depending on which you need.
+    """
     ctx.obj = {"site_url": site_url}
 
 
 @main.command()
-def login():
-    """Run the OAuth 2.0 (3LO) authorization-code flow and cache the resulting tokens."""
-    interactive_login(OAuthAppConfig.from_env())
+@click.argument("provider", type=click.Choice(["atlassian", "bitbucket"]))
+def login(provider: str):
+    """Run a provider's OAuth authorization-code flow and cache the resulting tokens."""
+    if provider == "atlassian":
+        atlassian_login(AtlassianOAuthAppConfig.from_env())
+    else:
+        bitbucket_auth.interactive_login(BitbucketOAuthAppConfig.from_env())
 
 
 @main.command()
-def logout():
-    """Discard cached OAuth tokens."""
-    auth_logout()
+@click.argument("provider", type=click.Choice(["atlassian", "bitbucket", "all"]), default="all")
+def logout(provider: str):
+    """Discard cached OAuth tokens for one provider, or both (the default)."""
+    if provider in ("atlassian", "all"):
+        atlassian_logout()
+    if provider in ("bitbucket", "all"):
+        bitbucket_auth.logout()
     click.echo("Cached tokens removed.")
 
 
@@ -45,7 +58,7 @@ def bb():
 @click.argument("workspace")
 def bb_repos(workspace: str):
     """List repositories in a Bitbucket workspace."""
-    _print(bitbucket.list_repositories(AtlassianSession(), workspace))
+    _print(bitbucket.list_repositories(BitbucketSession(), workspace))
 
 
 @bb.command("prs")
@@ -54,7 +67,7 @@ def bb_repos(workspace: str):
 @click.option("--state", default="OPEN", help="OPEN, MERGED, DECLINED, or SUPERSEDED.")
 def bb_prs(workspace: str, repo_slug: str, state: str):
     """List pull requests for a repository."""
-    _print(bitbucket.list_pull_requests(AtlassianSession(), workspace, repo_slug, state))
+    _print(bitbucket.list_pull_requests(BitbucketSession(), workspace, repo_slug, state))
 
 
 @bb.command("pr")
@@ -63,7 +76,7 @@ def bb_prs(workspace: str, repo_slug: str, state: str):
 @click.argument("pr_id", type=int)
 def bb_pr(workspace: str, repo_slug: str, pr_id: int):
     """Show a single pull request."""
-    _print(bitbucket.get_pull_request(AtlassianSession(), workspace, repo_slug, pr_id))
+    _print(bitbucket.get_pull_request(BitbucketSession(), workspace, repo_slug, pr_id))
 
 
 @bb.command("commits")
@@ -72,7 +85,7 @@ def bb_pr(workspace: str, repo_slug: str, pr_id: int):
 @click.option("--branch", default=None)
 def bb_commits(workspace: str, repo_slug: str, branch: str | None):
     """List commits for a repository (optionally a specific branch)."""
-    _print(bitbucket.list_commits(AtlassianSession(), workspace, repo_slug, branch))
+    _print(bitbucket.list_commits(BitbucketSession(), workspace, repo_slug, branch))
 
 
 @main.group()
