@@ -1,0 +1,68 @@
+/* Global resets & base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #f0f4ff;
+  color: #111827;
+  min-height: 100vh;
+}
+
+/* App layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+  color: #fff;
+  padding: 40px 24px 56px;
+  text-align: center;
+}
+
+.header-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.app-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  letter-spacing: -0.02em;
+}
+
+.app-subtitle {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.85;
+}
+
+.app-main {
+  flex: 1;
+  padding: 0 16px 48px;
+  margin-top: -32px; /* Overlap the form into the header */
+}
+
+.app-footer {
+  text-align: center;
+  padding: 16px 24px;
+  font-size: 12px;
+  color: #9ca3af;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+}
