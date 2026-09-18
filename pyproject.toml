@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "teamwork-graph-cli"
+version = "0.1.0"
+description = "CLI for querying Atlassian Bitbucket and Jira Service Management via OAuth 2.0 (3LO), for reach that the Claude/MCP Atlassian connection does not provide"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31",
+    "click>=8.1",
+]
+
+[project.scripts]
+teamwork-graph = "teamwork_graph_cli.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["teamwork_graph_cli*"]
